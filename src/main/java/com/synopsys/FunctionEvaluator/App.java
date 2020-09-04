@@ -19,15 +19,15 @@ public class App {
 				givenExps.add(arg);
 			}
 		}
-		//TODO: comment these lines before sending
-		givenExps.add("add(1, 2)");
-		givenExps.add("add(1, mult(2, 3))");
-		givenExps.add("mult(add(2, 2), div(9, 3))");
-		givenExps.add("let(a, 5, add(a, a))");
-		givenExps.add("let(a, 5, let(b, mult(a, 10), add(b, a)))");
-		givenExps.add("let(a, let(b, 10, add(b, b)), let(b, 20, add(a, b))");
-		givenExps.add("add(1, let(a, 5, add(a, a)))");
-		givenExps.add("add(let(a, 5, add(a, a)), let(a, 5, add(a, a)))");
+//		//TODO: comment these lines before sending
+//		givenExps.add("add(1, 2)");
+//		givenExps.add("add(1, mult(2, 3))");
+//		givenExps.add("mult(add(2, 2), div(9, 3))");
+//		givenExps.add("let(a, 5, add(a, a))");
+//		givenExps.add("let(a, 5, let(b, mult(a, 10), add(b, a)))");
+//		givenExps.add("let(a, let(b, 10, add(b, b)), let(b, 20, add(a, b))");
+//		givenExps.add("add(1, let(a, 5, add(a, a)))");
+//		givenExps.add("add(let(a, 5, add(a, a)), let(a, 5, add(a, a)))");
 		LOGGER.debug("Input expression(s) = " + givenExps);
 		RequestHandler oHandler = new RequestHandler();
 		oHandler.handleRequest(givenExps);
